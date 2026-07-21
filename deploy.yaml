@@ -1,0 +1,6 @@
+service: logistics-ai
+runtime: python39
+entrypoint: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+
+env_variables:
+  LOGISTICS_DB_PATH: /tmp/logistics.db
